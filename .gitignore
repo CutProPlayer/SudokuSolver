@@ -1,0 +1,20 @@
+  for (int i = startRow; i < startRow + 3; i++) {
+            for (int j = startCol; j < startCol + 3; j++) {
+                if (puzzle[i][j] == num) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    public static void printSudoku(int[][] puzzle) {
+        for (int row = 0; row < 9; row++) {
+            for (int col = 0; col < 9; col++) {
+                System.out.print(puzzle[row][col] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
